@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Being" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wit-rJ-vrO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="760"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tC1-1G-QYw">
+                                    <size key="itemSize" width="375" height="422"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4xs-Tz-lX5">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="422"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="being" translatesAutoresizingMaskIntoConstraints="NO" id="MYg-uV-fEd">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="iFK-nJ-14b"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Market Outlook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMh-1s-DI9">
+                                                    <rect key="frame" x="8" y="125" width="181" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-2036" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A48-7P-vcO">
+                                                    <rect key="frame" x="8" y="151" width="79.5" height="22"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                                    <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MoS-3z-F5H">
+                                                    <rect key="frame" x="0.0" y="178" width="375" height="244"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <mutableString key="text">The Boeing Current Market Outlook (CMO) is dedicated to accurately forecasting new airplane demand over the next 20 years. The CMO has been the industry standard since it was first shared publicly in 1961, painting the picture of the future of flight.
+This year we added interactive data visualizations to provide more context to the forecast through key forecast metrics as well as supporting analysis. Navigate the workbook tapping on sections where specified to gain insight with a detailed look at the future of the aviation market.
+As in previous years, a complete market analysis and forecast outlook are available in the download section below.</mutableString>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="MoS-3z-F5H" secondAttribute="trailing" id="2RO-w6-Zju"/>
+                                            <constraint firstItem="A48-7P-vcO" firstAttribute="top" secondItem="IMh-1s-DI9" secondAttribute="bottom" constant="5" id="8RZ-1c-VO6"/>
+                                            <constraint firstAttribute="bottom" secondItem="MoS-3z-F5H" secondAttribute="bottom" id="Ehi-gV-KBb"/>
+                                            <constraint firstItem="MYg-uV-fEd" firstAttribute="top" secondItem="4xs-Tz-lX5" secondAttribute="top" id="MW8-S6-1JM"/>
+                                            <constraint firstAttribute="trailing" secondItem="MYg-uV-fEd" secondAttribute="trailing" id="OG9-ap-Hi8"/>
+                                            <constraint firstItem="MoS-3z-F5H" firstAttribute="top" secondItem="A48-7P-vcO" secondAttribute="bottom" constant="5" id="c35-5y-cab"/>
+                                            <constraint firstItem="MYg-uV-fEd" firstAttribute="leading" secondItem="4xs-Tz-lX5" secondAttribute="leading" id="gnh-7a-hLW"/>
+                                            <constraint firstItem="A48-7P-vcO" firstAttribute="leading" secondItem="4xs-Tz-lX5" secondAttribute="leadingMargin" id="hVu-Rd-acH"/>
+                                            <constraint firstItem="IMh-1s-DI9" firstAttribute="leading" secondItem="4xs-Tz-lX5" secondAttribute="leadingMargin" id="iDR-ow-Q3K"/>
+                                            <constraint firstItem="IMh-1s-DI9" firstAttribute="top" secondItem="MYg-uV-fEd" secondAttribute="bottom" constant="5" id="sQz-Zm-gGp"/>
+                                            <constraint firstItem="MoS-3z-F5H" firstAttribute="leading" secondItem="4xs-Tz-lX5" secondAttribute="leading" id="vZ8-xu-NFl"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kX8-XP-tUQ">
+                                        <rect key="frame" x="0.0" y="482" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beingss" translatesAutoresizingMaskIntoConstraints="NO" id="hgB-AN-rJ0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                                </imageView>
+                                                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ve-bE-evB">
+                                                    <rect key="frame" x="0.0" y="160" width="375" height="40"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="joy-Yf-Aqp"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2TI-q5-bBa">
+                                                    <rect key="frame" x="0.0" y="160" width="375" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flight 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H58-Po-yMF">
+                                                            <rect key="frame" x="5" y="0.0" width="370" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="H58-Po-yMF" firstAttribute="leading" secondItem="2TI-q5-bBa" secondAttribute="leading" constant="5" id="3ma-s0-gqp"/>
+                                                        <constraint firstAttribute="trailing" secondItem="H58-Po-yMF" secondAttribute="trailing" id="AiZ-XQ-pcr"/>
+                                                        <constraint firstAttribute="height" constant="40" id="UrB-1Q-kc8"/>
+                                                        <constraint firstItem="H58-Po-yMF" firstAttribute="top" secondItem="2TI-q5-bBa" secondAttribute="top" id="cWp-Bd-mqg"/>
+                                                        <constraint firstAttribute="bottom" secondItem="H58-Po-yMF" secondAttribute="bottom" id="rpu-Mk-kql"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="hgB-AN-rJ0" firstAttribute="leading" secondItem="kX8-XP-tUQ" secondAttribute="leading" id="6XA-dF-Yxr"/>
+                                            <constraint firstItem="hgB-AN-rJ0" firstAttribute="top" secondItem="kX8-XP-tUQ" secondAttribute="top" id="7tb-tK-btY"/>
+                                            <constraint firstAttribute="bottom" secondItem="2ve-bE-evB" secondAttribute="bottom" id="a0O-qT-Ycl"/>
+                                            <constraint firstAttribute="trailing" secondItem="2ve-bE-evB" secondAttribute="trailing" id="hgd-hk-AUy"/>
+                                            <constraint firstAttribute="bottom" secondItem="2TI-q5-bBa" secondAttribute="bottom" id="iTG-MN-axJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="hgB-AN-rJ0" secondAttribute="bottom" id="o1i-QM-TjZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="hgB-AN-rJ0" secondAttribute="trailing" id="vKO-xV-gRy"/>
+                                            <constraint firstItem="2ve-bE-evB" firstAttribute="leading" secondItem="kX8-XP-tUQ" secondAttribute="leading" id="zYP-pr-7Rc"/>
+                                            <constraint firstAttribute="trailing" secondItem="2TI-q5-bBa" secondAttribute="trailing" id="zkN-WF-dpf"/>
+                                            <constraint firstItem="2TI-q5-bBa" firstAttribute="leading" secondItem="kX8-XP-tUQ" secondAttribute="leading" id="zqc-V6-qga"/>
+                                        </constraints>
+                                        <size key="customSize" width="375" height="200"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6nM-mb-Pvy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ww4-C7-coe">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0z-no-A7O">
+                                                    <rect key="frame" x="340" y="10" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="UJ1-a0-ZFV"/>
+                                                        <constraint firstAttribute="width" constant="25" id="mx4-KD-eVg"/>
+                                                    </constraints>
+                                                    <state key="normal" image="icons8-Menu Filled-50"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boeing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fva-ac-fki">
+                                                    <rect key="frame" x="158" y="13" width="59" height="24"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="fva-ac-fki" firstAttribute="centerX" secondItem="ww4-C7-coe" secondAttribute="centerX" id="1aF-gK-6gw"/>
+                                                <constraint firstItem="fva-ac-fki" firstAttribute="centerY" secondItem="ww4-C7-coe" secondAttribute="centerY" id="3I1-CN-3Ds"/>
+                                                <constraint firstAttribute="trailing" secondItem="J0z-no-A7O" secondAttribute="trailing" constant="10" id="871-jz-qcU"/>
+                                                <constraint firstAttribute="height" constant="50" id="kt7-f3-gnf"/>
+                                                <constraint firstItem="J0z-no-A7O" firstAttribute="top" secondItem="ww4-C7-coe" secondAttribute="top" constant="10" id="ys7-5a-eMh"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ww4-C7-coe" firstAttribute="leading" secondItem="6nM-mb-Pvy" secondAttribute="leading" id="cOu-6X-nAx"/>
+                                        <constraint firstItem="ww4-C7-coe" firstAttribute="top" secondItem="6nM-mb-Pvy" secondAttribute="top" id="ci7-ja-EkX"/>
+                                        <constraint firstAttribute="trailing" secondItem="ww4-C7-coe" secondAttribute="trailing" id="fHc-h6-EQ1"/>
+                                        <constraint firstAttribute="bottom" secondItem="ww4-C7-coe" secondAttribute="bottom" id="ii5-PY-U2G"/>
+                                    </constraints>
+                                </collectionReusableView>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wit-rJ-vrO" secondAttribute="trailing" id="KTk-vs-eeK"/>
+                            <constraint firstItem="wit-rJ-vrO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dSV-9n-DwB"/>
+                            <constraint firstItem="wit-rJ-vrO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hHz-wv-w7Y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wit-rJ-vrO" secondAttribute="bottom" constant="40" id="vUP-6u-abx"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="375" height="800"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114.40000000000001" y="121.4392803598201"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="being" width="634" height="396"/>
+        <image name="beingss" width="468" height="281"/>
+        <image name="icons8-Menu Filled-50" width="50" height="50"/>
+    </resources>
+</document>
